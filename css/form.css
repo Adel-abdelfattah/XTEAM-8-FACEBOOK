@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .25s linear;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+    color: #e9edf577;
+    opacity: .7;
+}
+body{
+    background: #f0f2f5;
+}
+/* start header */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px)  {
+    .container {
+        max-width: 540px;
+    }
+    
+}
+@media screen and (min-width: 576px)  {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .container {
+        max-width: 720px;
+    }
+    
+}
+
+@media screen and (min-width: 992px)  {
+    .container {
+        max-width: 960px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px)  {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+input{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dddfe2;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 100%;
+    margin: 10px;
+}
+input:focus{
+box-shadow: 0 0 0.1px 1px #1877f2;
+}
+.formitem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 5px;
+}
+
+.submit input{
+    background-color: #1877f2;
+    opacity: .8;
+    color: white;
+    margin-bottom: 10px;
+}
+.create-acc input{
+    background-color: #00a400;
+    width: 50%;
+    margin: 20px 0;
+}
+.submit input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.forget{
+    text-decoration: none;
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+.forget:hover{
+    text-decoration: underline;
+}
+
+fieldset{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px #31333138;
+    border: none;
+
+}
+form i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    transition: all .3s linear;
+}
+form i:hover{
+    color: red;
+    transform: rotateZ(900deg);
+}
+
+form{
+    margin: 10px auto;
+    width: 400px;
+    background-color: white;
+
+}
+.login-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.account{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+.account h1, .account h2, .account p{
+    width: 100%;
+    text-align: center;
+}
+.account h1{
+    margin: 15px;
+    color: #1877f2;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.account h2{
+    font-weight: normal;
+}
+.account p{
+    margin-bottom: 15px;
+}
+.account-item{
+    width: 160px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px 1px #31333138;
+    transition: all .3s linear;
+    position: relative;
+}
+.account-item span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -5px;
+    top: -5px;
+    background-color: #fa3e3e;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    cursor: default;
+}
+.account-item:last-of-type{
+    justify-content: space-between !important;
+}
+.account-item:last-of-type i{
+    padding: 60px 0;
+    background-color: #f5f6f7;
+    border-radius: 5px !important;
+}
+.account-item:hover, fieldset:hover{
+    box-shadow: 0 0 20px 5px #3133319d;
+}
+.account-item  img{
+    width: 160px;
+    height: 160px;
+    border-radius: 5px 5px 0 0;
+}
+
+.account-item h4{
+    font-size: 20px;
+    margin: auto 0;
+    color: #000;
+}
+.account-item i{
+    position: absolute;
+    color: white;
+    font-size: 17px;
+    border-radius: 50%; 
+}
+.add-account{
+    position: static !important;
+    font-size: 40px !important;
+    color: #1877f2 !important;
+}
+.account:hover .add-account{
+    transform: none !important;
+}
+.account-item:hover i{
+    transform: scale(1.4, 1.4);
+    color: wheat;
+}
+span .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    background-color: white;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    right: -50px;
+    top: -100%;
+    z-index: 10;
+}
+span:hover .tooltiptext{
+    visibility: visible;
+}
